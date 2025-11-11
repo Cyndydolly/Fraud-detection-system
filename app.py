@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # ---- Load model ----
 @st.cache_data
 def load_model():
-    return joblib.load("../models/final_model.joblib")
+    return joblib.load("final_model.joblib")
 
 model = load_model()
 
@@ -73,3 +73,4 @@ try:
 
 except Exception as e:
     st.write("Manual input not available for this model.")
+
